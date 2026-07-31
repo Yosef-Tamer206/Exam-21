@@ -1,0 +1,370 @@
+/* Global Selector */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  /* --background-color:rgb(242, 242, 242) ; */
+  --background-color: rgb(242, 242, 242);
+}
+body {
+  margin: 0;
+  font-family: "Maven Pro", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body::selection {
+  background-color: rgb(175, 255, 16);
+  color: rgb(247, 17, 113);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* navber */
+nav .left,
+nav .middel,
+nav .right {
+  width: 33.3%;
+}
+.outer-nav {
+  height: 70px;
+}
+nav {
+  background-color: var(--background-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+  align-items: center;
+}
+nav .left {
+    padding-right: 52px;
+}
+nav .left ul,
+footer .bottom .list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+nav .left ul li.one > a,
+footer .bottom .list ul li.one > a {
+  color: black;
+}
+nav .left ul li a,
+footer .bottom .list ul a {
+  color: rgb(144, 144, 144);
+  font-weight: 500;
+}
+.right i,
+.right span {
+  padding-inline: 5px;
+}
+.middel {
+  text-align: center;
+}
+nav .right {
+ text-align: right;
+}
+.middel h5,
+footer .left .left-text h5 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.middel span {
+  letter-spacing: 6px;
+  font-size: 12px;
+}
+.right i {
+  color: black;
+  font-size: 18px;
+}
+.right span {
+  font-weight: 600;
+}
+
+/* end navbar */
+/* footer */
+footer {
+  margin-top: 100px;
+  background-color: var(--background-color);
+}
+footer .container .inner-footer {
+  padding: 15px;
+  border-radius: 16px;
+}
+footer .top,
+footer .top .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+footer .top .left .prog {
+  width: 50px;
+  height: 3px;
+  background-color: black;
+}
+footer .left .left-icons i {
+  padding-inline: 15px;
+}
+footer .top .right form {
+  position: relative;
+}
+footer .top .right form i {
+  position: absolute;
+  left: 85%;
+  top: 25%;
+  font-size: 15px;
+  font-weight: 600;
+  color: gray;
+}
+footer .top .right form input {
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: 1px solid gray;
+  background-color: transparent;
+}
+footer .header {
+  text-align: center;
+}
+footer .header h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+footer .bottom .copy p {
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+}
+
+footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .left .left-text {
+  text-align: center;
+}
+footer .left .left-text h5 {
+  font-size: 13px;
+}
+footer .left .left-text span {
+  font-size: 10px;
+  letter-spacing: 6px;
+}
+footer .bottom .list ul a  {
+    font-size: 12px;
+}
+/* end footer */
+/* home */
+.home {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.171)),
+    url("../assets/images/cozy-lively-home-interior-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.home .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.home .container h1 {
+  color: white;
+  font-size: 100px;
+  font-family: "Edu VIC WA NT Hand", cursive;
+  margin-bottom: 20px;
+}
+
+.home .container p {
+  color: white;
+  font-size: 50px;
+  margin: 0;
+  letter-spacing: 40px;
+  font-family: "Edu VIC WA NT Hand", cursive;
+
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation:
+    typing 3.5s steps(30, end) forwards infinite,
+    blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25ch;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #58a6ff;
+  }
+}
+/* end Home */
+/* product */
+.product {
+    padding: 48px 0;
+  
+}
+.product .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product .top h4 {
+    margin: 0;
+    font-size: 30px;
+}
+.product .top h4 i {
+   margin-left: 5px;
+    font-size: 22px;
+}
+.product .top button  {
+    padding: 14px 40px;
+    
+    width: 250px;
+   
+    cursor: pointer;
+    background-color: black;
+    border: 0;
+    border-radius: 6px;
+
+
+}
+.product .top button a {
+font-size: 18px;
+ font-weight: bold;
+ color: white;
+}
+.product .top button a i {
+    margin-left: 5px;
+    color: white;
+    font-size: 14px;
+}
+.product .top button:hover {
+    background-color: gray;
+}
+.product .top button:hover a{
+    color: rgb(12, 1, 1);
+}
+.gallery {
+    margin-top: 60px;
+}
+.gallery .card {
+    border: 1px solid rgba(128, 128, 128, 0.589);
+    width: 25%;
+    border-radius: 10px;
+    padding: 35px;
+}
+.gallery .card .top img {
+    width: 100%;
+    display: block;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.gallery .card h3 {
+    font-size: 20px;
+}
+.gallery .card .top:hover img {
+    transform: scale(1.4);
+}
+.gallery .card .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery {
+    display: flex; align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 60px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.363);
+
+}
+
+.gallery .card .top {
+height: 150px;
+}
+/* end product */
+/* member */
+.bord {
+  padding-top: 60px;
+}
+.m-1 {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  width: 33.3%;
+  border-radius: 10px;
+}
+.m-1 .top {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* justify-content: center; */
+
+}
+.m-1 .top .image {
+  width: 70px;
+
+
+}
+.m-1 .top .image img {
+  border-radius:50%;
+
+
+  width: 100%;
+  display: block;
+}
+.m-1 .top h4 {
+  font-size: 22px;
+}
+.m-1  .bottom p {
+  font-weight: 500;
+}
+.top-text-head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.top-text-head h4 {
+  margin:0;
+  font-size: 30px;
+}
+.member {
+  display: flex;align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
