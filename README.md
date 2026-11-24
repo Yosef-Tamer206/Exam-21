@@ -4,8 +4,6 @@ A furniture store landing page built as a team project: hero, selected products,
 
 **Live demo:** https://yosef-tamer206.github.io/Exam-21/
 
-![Exam-21 screenshot](docs/screenshot.png)
-
 ## Features
 
 - Hero section for the store brand
